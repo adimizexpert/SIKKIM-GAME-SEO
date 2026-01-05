@@ -1,4 +1,4 @@
-# Sikkim Game SEO Website
+#  Game SEO Website
 
 A SEO-optimized website for Sikkim Game built with Next.js and next-seo.
 
