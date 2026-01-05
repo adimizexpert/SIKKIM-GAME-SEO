@@ -6,7 +6,7 @@ A SEO-optimized website for Sikkim Game built with Next.js and next-seo.
 - **Domain**: sikkimgamelogin.com
 - **URL**: https://sikkimgamelogin.com
 
-## Features
+## 
 
 - ✅ SEO optimized with next-seo
 - ✅ Structured data (JSON-LD) for better search engine understanding
