@@ -17,6 +17,9 @@ git commit -m "Initial commit: Complete Sikkim Game SEO website with all pages a
 echo Setting main branch...
 git branch -M main
 
+echo Pulling remote changes (if any)...
+git pull origin main --allow-unrelated-histories --no-edit
+
 echo Pushing to GitHub...
 git push -u origin main
 

@@ -22,6 +22,9 @@ git commit -m "Initial commit: Complete Sikkim Game SEO website with all pages a
 Write-Host "Setting main branch..." -ForegroundColor Green
 git branch -M main
 
+Write-Host "Pulling remote changes (if any)..." -ForegroundColor Yellow
+git pull origin main --allow-unrelated-histories --no-edit
+
 Write-Host "Pushing to GitHub..." -ForegroundColor Green
 git push -u origin main
 
