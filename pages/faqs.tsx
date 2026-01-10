@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
+import FAQAccordion from '@/components/FAQAccordion'
 
 const faqCategories = [
   {
@@ -157,6 +158,25 @@ export default function FAQs() {
       />
       <Head>
         <link rel="canonical" href="https://sikkimgamelogin.com/faqs" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": faqCategories.flatMap(category =>
+                category.faqs.map(faq => ({
+                  "@type": "Question",
+                  "name": faq.question,
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": faq.answer
+                  }
+                }))
+              )
+            })
+          }}
+        />
       </Head>
 
       <header className="header">

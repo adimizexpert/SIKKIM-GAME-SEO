@@ -103,3 +103,41 @@ export const registerPageSEO = {
   ],
 };
 
+// Helper function to generate SEO config for any page
+export function getPageSEO(path: string, title: string, description: string, keywords?: string) {
+  const baseUrl = 'https://sikkimgamelogin.com'
+  const fullUrl = `${baseUrl}${path}`
+  
+  return {
+    title: `${title} | sikkimgamelogin.com`,
+    description,
+    canonical: fullUrl,
+    openGraph: {
+      type: 'website',
+      locale: 'en_US',
+      url: fullUrl,
+      siteName: 'Sikkim Game',
+      title,
+      description,
+      images: [
+        {
+          url: `${baseUrl}/main.webp`,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    additionalMetaTags: [
+      {
+        name: 'robots',
+        content: 'index, follow',
+      },
+      ...(keywords ? [{
+        name: 'keywords',
+        content: keywords,
+      }] : []),
+    ],
+  }
+}
+

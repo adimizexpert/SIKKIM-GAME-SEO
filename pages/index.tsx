@@ -4,6 +4,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { defaultSEO } from '@/lib/seo-config'
+import FAQAccordion from '@/components/FAQAccordion'
+import ResponsibleUseNotice from '@/components/ResponsibleUseNotice'
+import InternalLinks from '@/components/InternalLinks'
+import Breadcrumbs from '@/components/Breadcrumbs'
+import { homePageFAQs } from '@/lib/faq-data'
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -424,6 +429,11 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          <Breadcrumbs items={[]} currentPage="Home" currentPath="/" />
+          <ResponsibleUseNotice />
+          <FAQAccordion faqs={homePageFAQs} title="Frequently Asked Questions" />
+          <InternalLinks currentPath="/" />
         </div>
       </main>
 
