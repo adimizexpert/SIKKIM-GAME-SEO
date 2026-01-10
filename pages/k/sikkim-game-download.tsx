@@ -23,7 +23,7 @@ export default function SikkimGameDownload() {
         title: 'Quick Download Steps',
         purpose: 'Download and install the official Sikkim Game APK on Android devices safely.',
         steps: 'Visit official website, Click download, Enable Unknown Sources, Locate APK, Install, Open and register',
-        commonIssue: 'App not installed error - Solution: Enable Install from Unknown Sources in Settings > Security'
+        commonIssue: 'App not installed error - Solution: Enable Install from Unknown Sources in Settings &gt; Security'
       }}
     >
       <section>

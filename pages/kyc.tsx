@@ -80,7 +80,7 @@ export default function KYC() {
         <h2>How to Complete KYC Verification</h2>
         <ol>
           <li>Login to your Sikkim Game account</li>
-          <li>Navigate to Account Settings > KYC Verification</li>
+          <li>Navigate to Account Settings &gt; KYC Verification</li>
           <li>Select ID proof type (Aadhaar, PAN, Passport, etc.)</li>
           <li>Upload clear photo of ID proof (front and back if required)</li>
           <li>Select address proof type (Aadhaar, utility bill, etc.)</li>
@@ -146,7 +146,7 @@ export default function KYC() {
         </p>
         <ul>
           <li>Login to your Sikkim Game account</li>
-          <li>Go to Account Settings > KYC Verification</li>
+          <li>Go to Account Settings &gt; KYC Verification</li>
           <li>Check KYC status (Pending, Processing, Approved, Rejected)</li>
           <li>View rejection reason (if rejected) and resubmit if needed</li>
           <li>Contact support if status doesn't update after 48 hours</li>

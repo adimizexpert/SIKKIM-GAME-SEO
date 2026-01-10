@@ -132,7 +132,7 @@ export default function Login() {
         <h2>Alternative Login Methods</h2>
         <h3>Biometric Login</h3>
         <p>
-          If your device and app version support biometric login (fingerprint or face recognition), you can enable it in Account Settings > Security Settings. 
+          If your device and app version support biometric login (fingerprint or face recognition), you can enable it in Account Settings &gt; Security Settings. 
           This allows quick and secure login using your fingerprint or face scan without entering password each time.
         </p>
         <h3>Remember Me Option</h3>

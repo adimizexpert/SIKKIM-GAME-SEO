@@ -57,7 +57,7 @@ export default function Download() {
         title: 'Quick Download Steps',
         purpose: 'Download and install the official Sikkim Game APK on Android devices safely.',
         steps: '6 steps: Visit website, Download APK, Enable Unknown Sources, Locate file, Install APK, Open and Register',
-        commonIssue: 'App not installed error - Solution: Enable Install from Unknown Sources in Settings > Security'
+        commonIssue: 'App not installed error - Solution: Enable Install from Unknown Sources in Settings &gt; Security'
       }}
       showHowTo={true}
       howToSteps={howToSteps}
@@ -102,8 +102,8 @@ export default function Download() {
         </p>
         <h3>App Not Installed Error</h3>
         <p>
-          This error usually occurs when "Install from Unknown Sources" is disabled. Go to Settings > Security > Enable "Install Unknown Apps" 
-          for your browser or file manager. Also ensure the APK file isn't corrupted by re-downloading if needed.
+          This error usually occurs when &quot;Install from Unknown Sources&quot; is disabled. Go to Settings &gt; Security &gt; Enable &quot;Install Unknown Apps&quot; 
+          for your browser or file manager. Also ensure the APK file isn&apos;t corrupted by re-downloading if needed.
         </p>
         <h3>Package Corrupted Error</h3>
         <p>
