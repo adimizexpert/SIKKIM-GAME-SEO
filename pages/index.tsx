@@ -87,16 +87,6 @@ export default function Home() {
 
           <section className="description-section">
             <div className="description-content">
-              <p>
-                The Sikkim Game has become a household name in the Indian online gaming scene. Whether you are looking for the sikkim game login, curious about the sikkim game lottery, or hunting for a sikkim game gift code today, this complete guide provides every detail you need.
-              </p>
-
-              <h1>What is the Sikkim Game?</h1>
-              
-              <p>
-                Commonly searched as sikkim game kya hai, this platform is an online prediction-based arena. While the name suggests a connection to the state, many users ask if it is the state game of sikkim. Legally, the Sikkim Online Gaming (Regulation) Act 2008 governs gaming in the state, but this specific app is a private platform for sikkim game colour trading and sikkim game big small predictions.
-              </p>
-
               <div className="cta-buttons">
                 <a 
                   href="https://www.sikkimgg.cc/#/register?invitationCode=384636381064" 
@@ -115,6 +105,16 @@ export default function Home() {
                   Sikkim game Free Gift Code
                 </a>
               </div>
+
+              <p>
+                The Sikkim Game has become a household name in the Indian online gaming scene. Whether you are looking for the sikkim game login, curious about the sikkim game lottery, or hunting for a sikkim game gift code today, this complete guide provides every detail you need.
+              </p>
+
+              <h1>What is the Sikkim Game?</h1>
+              
+              <p>
+                Commonly searched as sikkim game kya hai, this platform is an online prediction-based arena. While the name suggests a connection to the state, many users ask if it is the state game of sikkim. Legally, the Sikkim Online Gaming (Regulation) Act 2008 governs gaming in the state, but this specific app is a private platform for sikkim game colour trading and sikkim game big small predictions.
+              </p>
 
               <p>
                 Let's take a look at how to download the Sikkim Game, complete registration, log in, and understand how the platform works.
