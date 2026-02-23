@@ -1,17 +1,19 @@
+import { SITE_BASE_URL, canonicalUrl } from './site-urls'
+
 export const defaultSEO = {
   title: 'Sikkim Game Login: Official Register & Apk Download (2026)',
   description: 'Access the official Sikkim Game login portal. Register now to play WinGo, Aviator, and Big-Small games. Download the latest Sikkim Game APK for a ₹58 sign-up bonus',
-  canonical: 'https://sikkimgamelogin.com',
+  canonical: SITE_BASE_URL,
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://sikkimgamelogin.com',
+    url: SITE_BASE_URL,
     siteName: 'Sikkim Game',
     title: 'Sikkim Game Login: Official Register & Apk Download (2026)',
     description: 'Access the official Sikkim Game login portal. Register now to play WinGo, Aviator, and Big-Small games. Download the latest Sikkim Game APK for a ₹58 sign-up bonus',
     images: [
       {
-        url: 'https://sikkimgamelogin.com/main.webp',
+        url: `${SITE_BASE_URL}/main.webp`,
         width: 1200,
         height: 630,
         alt: 'Sikkim Game',
@@ -50,17 +52,17 @@ export const defaultSEO = {
 export const loginPageSEO = {
   title: 'Sikkim Game Login - Sign In to Your Account | sikkimgamelogin.com',
   description: 'Login to your Sikkim Game account. Quick and secure login process. Access your account and continue playing Sikkim Game online.',
-  canonical: 'https://sikkimgamelogin.com/login',
+  canonical: canonicalUrl('/login'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://sikkimgamelogin.com/login',
+    url: canonicalUrl('/login'),
     siteName: 'Sikkim Game',
     title: 'Sikkim Game Login - Sign In to Your Account',
     description: 'Login to your Sikkim Game account. Quick and secure login process.',
     images: [
       {
-        url: 'https://sikkimgamelogin.com/main.webp',
+        url: `${SITE_BASE_URL}/main.webp`,
         width: 1200,
         height: 630,
         alt: 'Sikkim Game Login',
@@ -78,17 +80,17 @@ export const loginPageSEO = {
 export const registerPageSEO = {
   title: 'Sikkim Game Registration - Create New Account | sikkimgamelogin.com',
   description: 'Register for Sikkim Game and create your account. Easy registration process to start playing Sikkim Game online. Sign up today!',
-  canonical: 'https://sikkimgamelogin.com/register',
+  canonical: canonicalUrl('/register'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://sikkimgamelogin.com/register',
+    url: canonicalUrl('/register'),
     siteName: 'Sikkim Game',
     title: 'Sikkim Game Registration - Create New Account',
     description: 'Register for Sikkim Game and create your account. Easy registration process to start playing.',
     images: [
       {
-        url: 'https://sikkimgamelogin.com/main.webp',
+        url: `${SITE_BASE_URL}/main.webp`,
         width: 1200,
         height: 630,
         alt: 'Sikkim Game Registration',
@@ -103,10 +105,9 @@ export const registerPageSEO = {
   ],
 };
 
-// Helper function to generate SEO config for any page
+// Helper function to generate SEO config for any page. Canonical is always https + non-www.
 export function getPageSEO(path: string, title: string, description: string, keywords?: string) {
-  const baseUrl = 'https://sikkimgamelogin.com'
-  const fullUrl = `${baseUrl}${path}`
+  const fullUrl = canonicalUrl(path)
   
   return {
     title: `${title} | sikkimgamelogin.com`,
@@ -121,7 +122,7 @@ export function getPageSEO(path: string, title: string, description: string, key
       description,
       images: [
         {
-          url: `${baseUrl}/main.webp`,
+          url: `${SITE_BASE_URL}/main.webp`,
           width: 1200,
           height: 630,
           alt: title,

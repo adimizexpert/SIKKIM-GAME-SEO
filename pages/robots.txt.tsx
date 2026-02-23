@@ -1,46 +1,34 @@
 import { GetServerSideProps } from 'next'
 
 function generateRobotsTxt() {
-  return `# Global Settings
+  return `# Allow all public content pages. No block on /feed/ (that URL does not exist).
 User-agent: *
 Allow: /
+Allow: /login
+Allow: /register
 Allow: /guide
-Allow: /Images/
-Disallow: /cgi-bin/
-Disallow: /wp-admin/
-Disallow: /account/settings
+Allow: /bonus
+Allow: /download
+Allow: /blogs
+Allow: /faqs
+Allow: /contact
+Allow: /about-sikkim-game
+Allow: /privacy
+Allow: /gift-code
+Allow: /invite-code
+Allow: /referral
+Allow: /customer-support
+Allow: /withdrawal
+Allow: /kyc
+Allow: /real-or-fake
+Allow: /safe-or-not
+Allow: /sitemap.xml
+
+# Block only truly private paths (if they exist)
 Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
 
-# Targeted GEO & Search Bots (Allowing for faster local indexing)
-User-agent: Googlebot
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /Images/
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Baiduspider
-Disallow: / 
-
-User-agent: Yandex
-Disallow: /
-
-# Block Aggressive Scrapers (Saves server bandwidth and prevents content theft)
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: SEMrushBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-# Link to your Sitemap
 Sitemap: https://sikkimgamelogin.com/sitemap.xml
 `
 }

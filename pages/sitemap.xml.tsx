@@ -1,98 +1,60 @@
 import { GetServerSideProps } from 'next'
+import { SITE_BASE_URL } from '@/lib/site-urls'
+
+/** All public-facing pages. No /k/ (redirected), no sitemap.xml or robots.txt. */
+const PUBLIC_PAGES: Array<{ path: string; changefreq: string; priority: string }> = [
+  { path: '', changefreq: 'daily', priority: '1.0' },
+  { path: '/login', changefreq: 'weekly', priority: '0.8' },
+  { path: '/register', changefreq: 'weekly', priority: '0.8' },
+  { path: '/guide', changefreq: 'weekly', priority: '0.9' },
+  { path: '/sikkim-game-register-bonus-guide', changefreq: 'monthly', priority: '0.7' },
+  { path: '/sikkim-game-login-guide', changefreq: 'monthly', priority: '0.7' },
+  { path: '/bonus', changefreq: 'monthly', priority: '0.7' },
+  { path: '/download', changefreq: 'monthly', priority: '0.7' },
+  { path: '/blogs', changefreq: 'weekly', priority: '0.8' },
+  { path: '/faqs', changefreq: 'monthly', priority: '0.7' },
+  { path: '/contact', changefreq: 'monthly', priority: '0.6' },
+  { path: '/about-sikkim-game', changefreq: 'monthly', priority: '0.7' },
+  { path: '/privacy', changefreq: 'yearly', priority: '0.5' },
+  { path: '/gift-code', changefreq: 'monthly', priority: '0.6' },
+  { path: '/invite-code', changefreq: 'monthly', priority: '0.6' },
+  { path: '/referral', changefreq: 'monthly', priority: '0.6' },
+  { path: '/customer-support', changefreq: 'monthly', priority: '0.6' },
+  { path: '/withdrawal', changefreq: 'monthly', priority: '0.6' },
+  { path: '/kyc', changefreq: 'monthly', priority: '0.6' },
+  { path: '/real-or-fake', changefreq: 'monthly', priority: '0.6' },
+  { path: '/safe-or-not', changefreq: 'monthly', priority: '0.6' },
+]
 
 function generateSiteMap() {
-  const baseUrl = 'https://sikkimgamelogin.com'
   const currentDate = new Date().toISOString().split('T')[0]
 
+  const urlEntries = PUBLIC_PAGES.map(
+    ({ path, changefreq = 'monthly', priority = '0.6' }) => `
+     <url>
+       <loc>${SITE_BASE_URL}${path || '/'}</loc>
+       <lastmod>${currentDate}</lastmod>
+       <changefreq>${changefreq}</changefreq>
+       <priority>${priority}</priority>
+     </url>`
+  ).join('')
+
   return `<?xml version="1.0" encoding="UTF-8"?>
-   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-     <url>
-       <loc>${baseUrl}</loc>
-       <lastmod>${currentDate}</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>1.0</priority>
-     </url>
-     <url>
-       <loc>${baseUrl}/guide</loc>
-       <lastmod>${currentDate}</lastmod>
-       <changefreq>weekly</changefreq>
-       <priority>0.9</priority>
-     </url>
-     <url>
-       <loc>${baseUrl}/login</loc>
-       <lastmod>${currentDate}</lastmod>
-       <changefreq>weekly</changefreq>
-       <priority>0.8</priority>
-     </url>
-     <url>
-       <loc>${baseUrl}/register</loc>
-       <lastmod>${currentDate}</lastmod>
-       <changefreq>weekly</changefreq>
-       <priority>0.8</priority>
-     </url>
-     <url>
-       <loc>${baseUrl}/blogs</loc>
-       <lastmod>${currentDate}</lastmod>
-       <changefreq>weekly</changefreq>
-       <priority>0.8</priority>
-     </url>
-     <url>
-       <loc>${baseUrl}/sikkim-game-register-bonus-guide</loc>
-       <lastmod>${currentDate}</lastmod>
-       <changefreq>monthly</changefreq>
-       <priority>0.7</priority>
-     </url>
-     <url>
-       <loc>${baseUrl}/sikkim-game-login-guide</loc>
-       <lastmod>${currentDate}</lastmod>
-       <changefreq>monthly</changefreq>
-       <priority>0.7</priority>
-     </url>
-     <url>
-       <loc>${baseUrl}/about-sikkim-game</loc>
-       <lastmod>${currentDate}</lastmod>
-       <changefreq>monthly</changefreq>
-       <priority>0.7</priority>
-     </url>
-     <url>
-       <loc>${baseUrl}/contact</loc>
-       <lastmod>${currentDate}</lastmod>
-       <changefreq>monthly</changefreq>
-       <priority>0.6</priority>
-     </url>
-     <url>
-       <loc>${baseUrl}/faqs</loc>
-       <lastmod>${currentDate}</lastmod>
-       <changefreq>monthly</changefreq>
-       <priority>0.7</priority>
-     </url>
-     <url>
-       <loc>${baseUrl}/privacy</loc>
-       <lastmod>${currentDate}</lastmod>
-       <changefreq>yearly</changefreq>
-       <priority>0.5</priority>
-     </url>
+   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urlEntries}
    </urlset>
- `
+`
 }
 
 function SiteMap() {
-  // getServerSideProps will do the heavy lifting
+  return null
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
-  // We generate the XML sitemap with the posts data
   const sitemap = generateSiteMap()
-
   res.setHeader('Content-Type', 'text/xml')
-  // we send the XML to the browser
   res.write(sitemap)
   res.end()
-
-  return {
-    props: {},
-  }
+  return { props: {} }
 }
 
 export default SiteMap
-

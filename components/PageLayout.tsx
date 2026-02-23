@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
 import Image from 'next/image'
+import { SITE_BASE_URL } from '@/lib/site-urls'
 import Breadcrumbs from './Breadcrumbs'
 import FAQAccordion from './FAQAccordion'
 import InternalLinks from './InternalLinks'
@@ -40,7 +41,7 @@ export default function PageLayout({
   title,
   description,
   canonical,
-  ogImage = 'https://sikkimgamelogin.com/main.webp',
+  ogImage = `${SITE_BASE_URL}/main.webp`,
   h1,
   introText,
   breadcrumbItems = [],
@@ -68,7 +69,7 @@ export default function PageLayout({
       "name": step.name,
       "text": step.text,
       ...(step.imagePlaceholder && {
-        "image": "https://sikkimgamelogin.com/main.webp"
+        "image": `${SITE_BASE_URL}/main.webp`
       })
     }))
   } : null

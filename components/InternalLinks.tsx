@@ -4,15 +4,16 @@ interface InternalLinksProps {
   currentPath?: string
 }
 
-const popularKeywordPages = [
-  { slug: 'sikkim-game-login', title: 'Sikkim Game Login' },
-  { slug: 'sikkim-game-download', title: 'Sikkim Game Download' },
-  { slug: 'sikkim-game-apk', title: 'Sikkim Game APK' },
-  { slug: 'sikkim-game-register', title: 'Sikkim Game Register' },
-  { slug: 'sikkim-game-lottery', title: 'Sikkim Game Lottery' },
-  { slug: 'sikkim-game-2025', title: 'Sikkim Game 2025' },
-  { slug: 'sikkim-game-link-2025', title: 'Sikkim Game Link 2025' },
-  { slug: 'sikkim-game-referral', title: 'Sikkim Game Referral' },
+// Main content pages (no /k/ doorway pages — those redirect to these)
+const moreHelpfulPages = [
+  { path: '/guide', title: 'Sikkim Game Guide' },
+  { path: '/login', title: 'Sikkim Game Login' },
+  { path: '/register', title: 'Sikkim Game Register' },
+  { path: '/download', title: 'Download & APK' },
+  { path: '/bonus', title: 'Bonus & Gift Codes' },
+  { path: '/invite-code', title: 'Invite Code' },
+  { path: '/referral', title: 'Referral Program' },
+  { path: '/about-sikkim-game', title: 'About Sikkim Game' },
 ]
 
 export default function InternalLinks({ currentPath }: InternalLinksProps) {
@@ -32,14 +33,13 @@ export default function InternalLinks({ currentPath }: InternalLinksProps) {
         </ul>
       </div>
       <div className="popular-keywords-widget">
-        <h3 className="widget-title">Popular Keyword Pages</h3>
+        <h3 className="widget-title">More helpful pages</h3>
         <ul className="keyword-links">
-          {popularKeywordPages.map((page, index) => {
-            const href = `/k/${page.slug}/`
-            if (currentPath === href) return null
+          {moreHelpfulPages.map((page, index) => {
+            if (currentPath === page.path) return null
             return (
               <li key={index}>
-                <Link href={href}>{page.title}</Link>
+                <Link href={page.path}>{page.title}</Link>
               </li>
             )
           })}
