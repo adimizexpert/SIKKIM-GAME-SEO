@@ -157,7 +157,7 @@ export default function PageLayout({
             </div>
             <div className="cta-buttons">
               <a
-                href="https://www.sikkimgg.cc/#/register?invitationCode=384636381064"
+                href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954"
                 className="cta-button"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -165,7 +165,7 @@ export default function PageLayout({
                 Login Now
               </a>
               <a
-                href="https://www.sikkimgg.cc/#/register?invitationCode=384636381064"
+                href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954"
                 className="cta-button"
                 target="_blank"
                 rel="noopener noreferrer"

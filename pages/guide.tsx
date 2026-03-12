@@ -312,7 +312,7 @@ export default function Guide() {
                 Your official source for Sikkim Game login, download, and ₹500 signup bonus. Play responsibly and enjoy the best gaming experience.
               </p>
               <a 
-                href="https://www.sikkimgg.cc/#/register?invitationCode=384636381064" 
+                href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954" 
                 className="footer-register-btn"
                 target="_blank"
                 rel="noopener noreferrer"

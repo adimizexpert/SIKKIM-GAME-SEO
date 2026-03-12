@@ -89,7 +89,7 @@ export default function Home() {
             <div className="description-content">
               <div className="cta-buttons">
                 <a 
-                  href="https://www.sikkimgg.cc/#/register?invitationCode=384636381064" 
+                  href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954" 
                   className="cta-button"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -97,7 +97,7 @@ export default function Home() {
                   Sikkim game login
                 </a>
                 <a 
-                  href="https://www.sikkimgg.cc/#/register?invitationCode=384636381064" 
+                  href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954" 
                   className="cta-button"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -128,7 +128,7 @@ export default function Home() {
 
               <div className="download-cta">
                 <a 
-                  href="https://www.sikkimgg.cc/#/register?invitationCode=384636381064" 
+                  href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954" 
                   className="cta-button"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -197,7 +197,7 @@ export default function Home() {
 
               <div className="download-cta">
                 <a 
-                  href="https://www.sikkimgg.cc/#/register?invitationCode=384636381064" 
+                  href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954" 
                   className="cta-button"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -412,7 +412,7 @@ export default function Home() {
 
               <div className="download-cta">
                 <a 
-                  href="https://www.sikkimgg.cc/#/register?invitationCode=384636381064" 
+                  href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954" 
                   className="cta-button"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -446,7 +446,7 @@ export default function Home() {
                 Your official source for Sikkim Game login, download, and ₹500 signup bonus. Play responsibly and enjoy the best gaming experience.
               </p>
               <a 
-                href="https://www.sikkimgg.cc/#/register?invitationCode=384636381064" 
+                href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954" 
                 className="footer-register-btn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -483,7 +483,7 @@ export default function Home() {
 
       <div className="floating-cta-button">
         <a 
-          href="https://www.sikkimgg.cc/#/register?invitationCode=384636381064" 
+          href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954" 
           target="_blank"
           rel="noopener noreferrer"
           className="floating-btn"
@@ -1322,7 +1322,7 @@ export default function Home() {
 
       <div className="floating-cta-button">
         <a 
-          href="https://www.sikkimgg.cc/#/register?invitationCode=384636381064" 
+          href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954" 
           target="_blank"
           rel="noopener noreferrer"
           className="floating-btn"

@@ -40,8 +40,8 @@ This document answers common audit questions about the Sikkim Game SEO site.
 ## 3. What affiliate program is being promoted?
 
 - **Brand:** **Sikkim Game** (gaming / prediction / lottery-style platform: WinGo, Aviator, Big-Small, etc.).
-- **Destination:** Official registration URL **`https://www.sikkimgg.cc/#/register?invitationCode=384636381064`** (used in CTA buttons and guides).
-- **Model:** Invite/referral code **384636381064** is embedded in register links, so the site is acting as an **affiliate/referral** channel for Sikkim Game (sikkimgg.cc), not a separate “casino brand” — it promotes this single gaming brand.
+- **Destination:** Official registration URL **`https://www.bigmumbaia.com/#/register?invitationCode=823647709954`** (used in CTA buttons and guides).
+- **Model:** Invite/referral code **823647709954** is embedded in register links, so the site is acting as an **affiliate/referral** channel for Sikkim Game (sikkimgg.cc), not a separate “casino brand” — it promotes this single gaming brand.
 
 ---
 
@@ -118,6 +118,6 @@ This document answers common audit questions about the Sikkim Game SEO site.
 | **Page count** | 38 content pages (22 main + 17 under `/k/`; sitemap has 11) |
 | **Content types** | Guides, login/register CTAs, bonus/promo, keyword pages, trust, support, about, blog index, download |
 | **Content source** | Written for this site; no scraping; likely templated/AI-assisted |
-| **Affiliate program** | Sikkim Game (sikkimgg.cc), invite code 384636381064 |
+| **Affiliate program** | Sikkim Game (bigmumbaia.com), invite code 823647709954 |
 | **CMS** | None – Next.js (React) with content in code |
 | **Site structure** | As in tables above; consider adding all public URLs to the sitemap |
