@@ -116,7 +116,7 @@ export default function AboutSikkimGame() {
                 <p className="cta-text">Ready to start your journey?</p>
                 <div className="cta-button-container">
                   <a 
-                    href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954" 
+                    href="https://www.jaiclub00.com/#/register?invitationCode=16454276749" 
                     className="cta-button"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -145,7 +145,7 @@ export default function AboutSikkimGame() {
                 Your official source for Sikkim Game login, download, and ₹500 signup bonus. Play responsibly and enjoy the best gaming experience.
               </p>
               <a 
-                href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954" 
+                href="https://www.jaiclub00.com/#/register?invitationCode=16454276749" 
                 className="footer-register-btn"
                 target="_blank"
                 rel="noopener noreferrer"

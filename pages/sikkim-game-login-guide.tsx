@@ -176,7 +176,7 @@ export default function SikkimGameLoginGuide() {
               <h2>Quick Links for Users</h2>
               <ul className="quick-links-list">
                 <li>
-                  <strong>Official Login:</strong> <a href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954" target="_blank" rel="noopener noreferrer">Click Here to Login</a>
+                  <strong>Official Login:</strong> <a href="https://www.jaiclub00.com/#/register?invitationCode=16454276749" target="_blank" rel="noopener noreferrer">Click Here to Login</a>
                 </li>
                 <li>
                   <strong>Support:</strong> Sikkim game customer care number whatsapp number
@@ -205,7 +205,7 @@ export default function SikkimGameLoginGuide() {
                 Your official source for Sikkim Game login, download, and ₹500 signup bonus. Play responsibly and enjoy the best gaming experience.
               </p>
               <a 
-                href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954" 
+                href="https://www.jaiclub00.com/#/register?invitationCode=16454276749" 
                 className="footer-register-btn"
                 target="_blank"
                 rel="noopener noreferrer"

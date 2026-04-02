@@ -183,7 +183,7 @@ export default function HowColourPredictionGamesWork() {
                 best gaming experience.
               </p>
               <a
-                href="https://www.bigmumbaia.com/#/register?invitationCode=823647709954"
+                href="https://www.jaiclub00.com/#/register?invitationCode=16454276749"
                 className="footer-register-btn"
                 target="_blank"
                 rel="noopener noreferrer"
